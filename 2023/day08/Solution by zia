@@ -1,2 +1,29 @@
-Added the commands
-Clone and fork the repo
+Create a new repository on GitHub and clone it to your local machine
+Make some changes to a file in the repository and commit them to the repository using Git
+Push the changes back to the repository on GitHub
+
+
+************************Task 1 Soution******************************************************************
+#git clone Repo_URL
+We can copy Repo URL from file on git from code section.
+
+************************Task 2 Soution******************************************************************
+     #vim commands.txt
+Make some changes in the files.
+     #git add commands.txt
+     #git commit -m "Make changes on local"
+
+************************Task 3 Soution******************************************************************
+#git push origin main
+
+It will ask for username and password so we can set a token.Set token in GitHub setting.....>Developer settings
+Now we need to add this token 
+     #git remote set-url --add origin https://Token_ID@GitHub_name/folder.git
+Now we can check remote path using below command
+     #git remote -v
+Now we will see three URL. We can remove other URLs to use only token URL.
+     #git remote set-url --delete origin https://github.com/GitHub_name/folder.git
+Now we can push without username and password
+     #git push origin main.
+
+Now our changes made on local macine are reflected in GitHub.
